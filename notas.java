@@ -6,15 +6,12 @@ import java.util.Scanner;
  *Esta aplicaccion nos permite introducir tres notas y calcular su nota media
  */
 
-/**
- * @author Ernest
- *
- */
+
 public class notas {
 	//declaramos la variables que nos hacen falta
 	
 	/**
-	 * @param uf1 Esta es la variable donde almacenamos la nota de la primera uf del alumno.
+	 * @param unidadFormativa1 Esta es la variable donde almacenamos la nota de la primera uf del alumno.
 	 * @param uf2 Esta es la variable donde almacenamos la nota de la segunda uf del alumno.
 	 * @param uf3 Esta es la variable donde almacenamos la nota de la tercera uf del alumno.
 	 */
@@ -26,7 +23,7 @@ public class notas {
 	 * @param acu3 Esta es la variable donde almacenamos la nota calculada de la tercera uf del alumno.
 	 * @param def Esta es la variable donde almacenamos la nota definitiva del alumno.
 	 */
-	double uf1, uf2, uf3;
+	double unidadFormativa1, uf2, uf3;
 	double acu1, acu2, acu3, def;
 	//utilizames el escaner para poder introducir datos
 	Scanner entrada = new Scanner(System.in);
@@ -43,7 +40,7 @@ public class notas {
 		
 		System.out.print("ingrese nota 1: ");
 		
-		uf1= entrada.nextDouble();
+		unidadFormativa1= entrada.nextDouble();
 
 		
 		
@@ -63,7 +60,7 @@ public class notas {
 	 */
 	public void comprobarcion(){
 		
-		if (uf1>10) {
+		if (unidadFormativa1>10) {
 			System.out.println(" nota1 mal introducida");
 			
 		}else {
@@ -89,7 +86,7 @@ public class notas {
 	 * Con este metodo calculamos las notas introducidas, pero no las mostramos.
 	 */
 	public void Calculonotas() {
-		acu1= uf1*0.35;
+		acu1= unidadFormativa1*0.35;
 		acu2 = uf2 * 0.35;
 		acu3 = uf3 * 0.30;
 		
@@ -105,7 +102,7 @@ public class notas {
 	public void Mostrar() {
 		//print ln lo que hace es que al terminar el print baja la linea
 		System.out.println(" notas introducidas son:");
-		System.out.println(" nota1 = " + uf1);
+		System.out.println(" nota1 = " + unidadFormativa1);
 		System.out.println(" nota2 = " + uf2);
 		System.out.println(" nota3 = " + uf3);
 		
