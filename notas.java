@@ -6,8 +6,8 @@ import java.util.Scanner;
  *Esta aplicaccion nos permite introducir tres notas y calcular su nota media
  */
 
-//HE MODIFICADO EL CODIGO DESDE GIT HUB
 
+//HE MODIFICADO EL CODIGO DESDE GIT HUB
 
 public class notas {
 	//declaramos la variables que nos hacen falta
